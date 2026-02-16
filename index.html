@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>Joya</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- زرارين ثابتين على اليمين -->
+<div class="floating-buttons">
+    <button id="shopNow">Shop Now</button>
+    <button id="cartOut">السلة 🛒</button>
+</div>
+
+<!-- الهيدر -->
+<header>
+    <h1>Joya</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#Cotton">Hoodies</a></li>
+            <li><a href="#sets">Sets</a></li>
+            <li><a href="#Pullovers">Pullovers</a></li>
+            <li><a href="#Pants">Pants</a></li>
+            <li><a href="#Jackets">Jackets</a></li>
+            <li><a href="#Sale">Sale</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- السلايدر الجديد: 4 صور كل مرة -->
+<div class="slider">
+    <div class="slide-set active">
+        <img src="images/1.jpg">
+        <img src="images/2.jpg">
+        <img src="images/3.jpg">    
+        <img src="images/4.jpg">
+    </div>
+
+    <div class="slide-set">
+        <img src="images/5.jpg">
+        <img src="images/6.jpg">
+        <img src="images/7.jpg">
+        <img src="images/8.jpg">
+    </div>
+
+    <div class="slide-set">
+        <img src="images/9.jpg">
+        <img src="images/10.jpg">
+        <img src="images/11.jpg">
+        <img src="images/12.jpg">
+    </div>
+</div>
+
+<div class="divider-text">
+    <span>منتجاتنا المميزة</span>
+</div>
+<div class="divider-text">
+    <span>Home</span>
+</div>
+<!-- المنتج الأول -->
+<section class="product">
+    
+    <!-- صور المنتج -->
+    <div class="product-images">
+        <img src="images/p1-1.jpg" alt="هودي جديد">
+        <img src="images/p1-2.jpg" alt="هودي جديد">
+        <img src="images/p1-3.jpg" alt="هودي جديد">
+        <img src="images/p1-4.jpg" alt="هودي جديد">
+    </div>
+
+    <!-- هودي/سويتشيرت قطن - اوفرسايز-->
+    <p class="product-desc">
+         هودي/سويتشيرت قطن - اوفرسايز
+    </p>
+
+    <!-- الألوان -->
+    <div class="colors">
+        <span class="color" data-color="اسود" style="background: black;" title="أسود"></span>
+        <span class="color" data-color="بيج فاتح" style="background: rgb(240, 240, 204);" title="بيج فاتح"></span>
+        <span class="color" data-color="بيج" style="background: beige;" title="بيج"></span>
+        <span class="color" data-color="وردي" style="background: rgb(246, 148, 164);" title="وردي"></span>
+        <span class="color" data-color="نبيتي" style="background: rgb(124, 31, 47);" title="نبيتي"></span>
+        <span class="color" data-color="برجاندي" style="background: rgb(58, 6, 15);" title="برجاندي"></span>
+        <span class="color" data-color="طوبي" style="background: rgb(90, 2, 18);" title="طوبي"></span>
+        <span class="color" data-color="اخضر داكن" style="background: rgb(12, 96, 26);" title="اخضر داكن"></span>
+        <span class="color" data-color="اخضر زيتي" style="background: rgb(10, 57, 10);" title="اخضر زيتي"></span>
+    </div>
+
+    <!-- التحكم في الكمية -->
+    <div class="quantity-box">
+        <button class="qty-btn" onclick="decreaseQty(this)">-</button>
+        <span class="qty">1</span>
+        <button class="qty-btn" onclick="increaseQty(this)">+</button>
+    </div>
+    
+    <!-- الأزرار -->
+    <div class="product-buttons">
+        <button class="add-btn" onclick="addToCart(this, 'هودي قطن اوفرسايز')">
+            إضافة إلى السلة
+        </button>
+
+        <button class="buy-btn" onclick="buyNow(this, 'هودي قطن اوفرسايز')">
+            شراء الآن
+        </button>
+    </div>
+</section>
+
+<!-- قسم Home -->
+<section id="Home">
+    <h2></h2>
+</section>
+
+<!-- قسم Hoodies -->
+<section id="Cotton" class="category"></section>
+
+<!-- قسم Sets -->
+<section id="sets" class="category"></section>
+
+<!-- قسم Pullovers -->
+<section id="Pullovers" class="category"></section>
+
+<!-- قسم Pants -->
+<section id="Pants" class="category"></section>
+
+<!-- قسم Sale -->
+<section id="Sale" class="category"></section>
+
+<!-- الفوتر -->
+<footer>
+    <div class="social-icons">
+        <a href="#" target="_blank"><img src="icons/whatsapp.png" alt="WhatsApp"></a>
+        <a href="#" target="_blank"><img src="icons/tiktok.png" alt="TikTok"></a>
+        <a href="#" target="_blank"><img src="icons/instagram.png" alt="Instagram"></a>
+        <a href="#" target="_blank"><img src="icons/facebook.png" alt="Facebook"></a>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
